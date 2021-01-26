@@ -1,0 +1,41 @@
+<launch>
+	<node pkg="procesamiento_nubes" type="Molde_malo" name="Molde_malo_nodo" />	
+	<node pkg="procesamiento_nubes" type="Leer_Nube" name="leer_nube_nodo" />
+	<node pkg="procesamiento_nubes" type="Pass_Through" name="Pass_Through_nodo" />
+	<node pkg="procesamiento_nubes" type="Filtro_SOR" name="Filtro_SOR_nodo" />
+	<node pkg="procesamiento_nubes" type="Submuestreo" name="Submuestreo_nodo" />
+	<node pkg="procesamiento_nubes" type="Planar_Segmentation" name="Planar_Segmentation_nodo" /> 
+        <node pkg="procesamiento_nubes" type="projecting" name="Proyeccion" />
+	<node pkg="procesamiento_nubes" type="pcl_transfor" name="transformacion" />
+        <node pkg="procesamiento_nubes" type="transformacion_plato" name="transformacion_en_plato" />
+	<node pkg="procesamiento_nubes" type="pcl_submuestreo_final" name="Submuestreo_final" />
+	<node pkg="procesamiento_nubes" type="pcl_escalar" name="Nube_escalada" />
+	<node pkg="procesamiento_nubes" type="Molde_comparar" name="Nube_a_comparar" />
+	<node pkg="procesamiento_nubes" type="msgs_filters" name="Comparacion" />
+	<node pkg="procesamiento_nubes" type="pcl_modelcoef" name="coeficientes_modelo" />
+	<node pkg="procesamiento_nubes" type="msgs_filters_getcoef" name="Proyeccion_1" />
+	<node pkg="procesamiento_nubes" type="projection_1" name="Proyeccion_2" />
+   	<node pkg="procesamiento_nubes" type="projection_2" name="Proyeccion_3" />
+   	<node pkg="procesamiento_nubes" type="projection_3" name="Proyeccion_4" />
+   	<node pkg="procesamiento_nubes" type="projection_4" name="Proyeccion_5" />
+   	<node pkg="procesamiento_nubes" type="projection_5" name="Proyeccion_6" />
+   	<node pkg="procesamiento_nubes" type="projection_6" name="Proyeccion_7" />
+        <node pkg="procesamiento_nubes" type="sumas" name="Suma_total" />
+
+<!--	<node pkg="procesamiento_nubes" type="pcl_filtro_sor_final" name="PCL_filtro_sor_final" />
+	<node pkg="procesamiento_nubes" type="pcl_cropbox" name="PCL_cropbox" />
+   	<node pkg="procesamiento_nubes" type="projection_1" name="Proyeccion_1" />
+	<node pkg="procesamiento_nubes" type="projection_2" name="Proyeccion_2" />
+	<node pkg="procesamiento_nubes" type="projection_3" name="Proyeccion_3" />
+	<node pkg="procesamiento_nubes" type="projection_4" name="Proyeccion_4" />
+	<node pkg="procesamiento_nubes" type="projection_5" name="Proyeccion_5" />
+	<node pkg="procesamiento_nubes" type="projection_6" name="Proyeccion_6" />
+	<node pkg="procesamiento_nubes" type="projection_7" name="Proyeccion_7" />
+	<node pkg="procesamiento_nubes" type="projection_8" name="Proyeccion_8" />
+	<node pkg="procesamiento_nubes" type="sumas" name="Suma_total" />   -->
+
+</launch>
+
+
+
+
